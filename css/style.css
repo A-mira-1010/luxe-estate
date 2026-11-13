@@ -1,0 +1,74 @@
+:root {
+  --charcoal: #171a19;
+  --beige: #e9e3d8;
+  --champagne: #b69a72;
+  --white: #f8f7f3;
+  --gray: #8b8982;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ===== Base ==== */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* ==== Navbar ==== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--beige);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+.logo {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-links a {
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--champagne);
+}
+.btn {
+  background: var(--champagne);
+  color: var(--white);
+  padding: 12px 28px;
+}
+.nav-links .btn:hover {
+  background: var(--charcoal);
+  color: var(--white);
+}
