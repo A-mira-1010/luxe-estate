@@ -68,6 +68,7 @@ ul {
   background: var(--champagne);
   color: var(--white);
   padding: 12px 28px;
+  display: inline-block;
 }
 .nav-links .btn:hover {
   background: var(--charcoal);
@@ -94,7 +95,7 @@ ul {
 }
 .hero-content {
   position: relative;
-  max-width: 700px;
+  max-width: 1000px;
   padding: 0 24px;
   color: var(--white);
 }
@@ -107,4 +108,10 @@ ul {
 .hero p {
   font-size: 18px;
   margin-bottom: 32px;
+}
+.hero .btn {
+  transition: backgroound 0.3s ease;
+}
+.hero .btn:hover {
+  background: var(--charcoal);
 }
