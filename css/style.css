@@ -73,3 +73,38 @@ ul {
   background: var(--charcoal);
   color: var(--white);
 }
+/* ==== Hero ==== */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(../images/villa-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 26, 25, 0.5);
+}
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 0 24px;
+  color: var(--white);
+}
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
