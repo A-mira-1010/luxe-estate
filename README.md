@@ -9,3 +9,5 @@ Premium real estate website built with HTML and CSS.
   
 ## Credits
 Images from Unsplash.
+
+Hero image by Woody Kelly on Unsplash.
