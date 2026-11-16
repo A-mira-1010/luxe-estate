@@ -213,7 +213,55 @@ ul {
   font-size: 20px;
   font-weight: 500;
 }
-
+/* ==== Why Choose Us ==== */
+.why-us {
+  background: var(--beige);
+  padding: 100px 0;
+  text-align: center;
+}
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: var(--champagne);
+  margin-bottom: 12px;
+}
+.why-us h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.feature {
+  transition: transform 0.3s ease;
+}
+.feature:hover {
+  transform: translateY(-6px);
+}
+.feature-icon {
+  color: var(--champagne);
+  margin-bottom: 17px;
+}
+.feature-icon svg {
+  width: 40px;
+  height: 40px;
+}
+.feature h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+margin-bottom: 8px;
+}
+.feature p {
+  color: var(--charcoal);
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+}
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero {
@@ -282,5 +330,16 @@ ul {
   }
   .featured {
     padding: 60px 0;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .why-us {
+    padding: 60px 0;
+  }
+  .why-us h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 }
