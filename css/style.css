@@ -338,7 +338,107 @@ ul {
   color: var(--gray);
   font-size: 14px;
 }
+/* ==== CTA ==== */
+.cta {
+  position: relative;
+  padding: 120px 24px;
+  text-align: center;
+  color: var(--white);
+  background: url(../images//villa-hero.jpg) center / cover no-repeat;
+}
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 26, 25, 0.5);
+}
+.cta-content {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cta h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.cta p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.btn {
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: var(--charcoal);
+}
+/* ==== Footer ==== */
+.footer {
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 80px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer-brand p {
+  max-width: 280px;
+  color: var(--beige);
+  opacity: 0.7;
+}
+.footer h3 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--champagne);
+  margin-bottom: 20px;
+}
+.footer li {
+  margin-bottom: 11px;
+  color: var(--beige);
+  opacity: 0.85;
+}
+.footer a {
+  transition: color 0.3s ease;
+}
+.footer li a:hover {
+  color: var(--champagne);
+}
+.footer-bottom {
+  border-top: 1px solid rgba(233, 227, 216, 0.15);
+  padding-top: 25px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--gray);
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-links svg {
+  width: 20px;
+  height: 20px;
+}
 
+.social-links li {     
+  display: flex;      
+  align-items: center;
+  gap: 10px;          
+}    
+.social-links li {
+  transition: color 0.3s ease
+}
+.social-links li:hover {
+color: var(--champagne);
+}
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero {
@@ -442,5 +542,21 @@ ul {
   }
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+  .cta {
+    padding: 80px 24px;
+  }
+  .cta h2 {
+    font-size: 30px;
+  }
+  .footer {
+    padding: 60px 0 24px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 }
