@@ -214,6 +214,25 @@ ul {
   font-size: 20px;
   font-weight: 500;
 }
+.property-meta {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--beige);
+  font-size: 14px;
+  color: var(--gray);
+}
+.property-meta li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.property-meta svg {
+  width: 18px;
+  height: 18px;
+  color: var(--champagne);
+}
 /* ==== Why Choose Us ==== */
 .why-us {
   background: var(--beige);
